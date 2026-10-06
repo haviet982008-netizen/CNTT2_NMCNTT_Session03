@@ -1,0 +1,16 @@
+﻿Bài 3 : Thiết kế hệ thống IoT thông minh và quản lý cấu hình
+
+
+Thiết kế kiến trúc:
+1. Data – Dữ liệu
+Cảm biến trong trang trại liên tục thu thập dữ liệu:
+* Nhiệt độ.
+* Độ ẩm đất.
+* Lượng nước.
+* Độ ẩm không khí
+2. Information – Thông tin
+Hệ thống xử lý và kết hợp dữ liệu thu thập được để tạo ra thông tin rồi gửi thông báo về cho chủ vườn.
+3. Knowledge – Kiến thức
+Hệ thống áp dụng các quy tắc đã được thiết lập để đưa ra hành động.
+4. Wisdom – Trí tuệ
+ệ thống không chỉ phản ứng với tình trạng hiện tại mà còn dựa vào dự báo và kinh nghiệm/dữ liệu dài hạn để tối ưu quyết định.
