@@ -1,0 +1,20 @@
+﻿Tối ưu tài nguyên máy tính và xây dựng hệ thống lưu trữ khoa học 
+Phần 1:Phân tích
+-Lý do máy bị lag:
++Khi RAM đầy, Windows buộc phải dùng một phần SSD làm RAM ảo. Tốc độ đọc/ghi của SSD chậm hơn RAM rất nhiều (khoảng vài chục lần) ➔ CPU phải chờ nạp/tráo dữ liệu liên tục gây đơ, giật máy. 
+-Phân biệt vai trò: RAM vs Storage
++RAM (Bàn làm việc): Lưu trữ tạm thời các ứng dụng đang chạy (Chrome, VS Code) để CPU xử lý tức thì. Dung lượng nhỏ (8GB), tốc độ cực nhanh, mất dữ liệu khi tắt máy.
++Storage / SSD (Ngăn tủ): Lưu trữ dài hạn dữ liệu, file code, hệ điều hành. Dung lượng lớn (256GB), tốc độ chậm hơn RAM, giữ nguyên dữ liệu khi tắt máy.
+Phần 2:Thiết kế
+-Sơ đ
+D:/
+└── ptit-workspace/                       
+    ├── 01-learning-materials/           
+    │   ├── python-core/                 
+    │   └── os-concepts/                  
+    ├── 02-source-code/                  
+    │   ├── shopee-lite-app/            
+    │   └── practice-exercises/          
+    └── 03-project-docs/                  
+        ├── requirement-specs/           
+       └── final-reports/
