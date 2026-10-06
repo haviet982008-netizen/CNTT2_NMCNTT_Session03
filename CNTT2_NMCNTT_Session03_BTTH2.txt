@@ -1,0 +1,18 @@
+﻿Phân tích hiệu năng hệ thống và quản lý đường dẫn tệp 
+Phần 1:Báo cáo phân tích
+-Đường dẫn tuyệt đối gây lỗi vì:
++Đường dẫn tuyệt đối bắt đầu cố định từ gốc ổ đĩa 
++Khi sang máy khác, tên người dùng, tên ổ đĩa hoặc cấu trúc thư mục thay đổi khiến hệ điều hành không tìm thấy file đúng vị trí đó ➔ Báo lỗi
+-Luồng IPO chạy từ Storage sang RAM:
++Input : Người dùng kích hoạt lệnh chạy file Python từ thiết bị SSD/HDD.
++Processing (Xử lý):
+1. CPU gửi yêu cầu đọc dữ liệu file chương trình và hình ảnh từ Storage.
+2. Dữ liệu được load từ Storage lên RAM.
+3. CPU trực tiếp lấy mã lệnh và dữ liệu ảnh từ RAM để xử lý, tính toán và dựng giao diện.
++Output : Giao diện ứng dụng Shopee-Lite kèm logo hiển thị ra màn hình.
+Phần 2:Giải pháp kĩ thuật
+-Đường dẫn tương đối:   ./../assets/logo.png 
+-3 bước giảm lag/treo máy dựa trên Task Manager
+1. Mở Task Manager: Bấm tổ hợp phím Ctrl + Shift + Esc.
+2. Tìm & Ngắt tiến trình ngốn RAM: Tại tab Processes, sắp xếp cột Memory giảm dần ➔ Chọn ứng dụng/tiến trình chiếm dụng RAM quá lớn (ví dụ: các tab Chrome thừa, phần mềm chạy ngầm) ➔ Nhấn End Task.
+3. Giải phóng RAM ảo (Swap): Đóng các chương trình không cần thiết để hệ điều hành giải phóng bớt bộ nhớ tạm, giúp giảm tải ổ đĩa và hết đơ giật.
