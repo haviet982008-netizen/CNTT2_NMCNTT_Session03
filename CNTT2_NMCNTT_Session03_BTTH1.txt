@@ -1,0 +1,14 @@
+﻿Quản lý lưu trữ và đường dẫn tệp trong Windows 
+Phần 1:Phân tích
+-Các lỗi sai trong lập luận của Nam:
++ Ổ C:\ là nơi chứa Windows và phần mềm hệ thống. Khi máy bị lỗi, cần cài lại Win hoặc format ổ C:, toàn bộ bài tập sẽ bị xóa sạch vĩnh viễn. Ngoài ra, lưu dữ liệu cá nhân tràn lan ở ổ C:\ gây đầy bộ nhớ tạm và làm chậm máy.
++System32 là thư mục chứa file nhân của Windows, không có chức năng "bảo vệ" file code như Nam nghĩ. Ngược lại, lưu file vào đây dễ bị Windows đòi quyền Administrator khi truy cập, bị phần mềm diệt virus quét nhầm là mã độc, hoặc gây nguy cơ lỗi hệ thống.
++Vi phạm quy tắc đặt tên Developer. Khi thao tác trong Terminal (dòng lệnh), khoảng trắng sẽ làm cho trình thông dịch hiểu nhầm Bai, Tap, Cua, Nam là các tham số/đối số riêng biệt, dẫn đến lỗi không tìm thấy đường dẫn (FileNotFoundError / No such file or directory).
++Hiểu sai về cách quy đổi từ đơn vị Mbps sang MB/s.Nam đang cho rằng 100Mbps=100MB/s,nhưng thực tế 100Mbps=12.5MB/s.Vậy nhà mạng không lừa đảo
+Phần 2:Hoàn thiện
+-Sơ đồ cây thư mục chuẩn:
+D:\
+└── workspace/
+    └── bai-tap-cua-/
+        └── session-01/
+            └── bai-tap-1.py
